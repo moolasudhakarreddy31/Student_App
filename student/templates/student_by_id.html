@@ -1,0 +1,40 @@
+{% extends 'homepage.html' %}
+{% block title %} Student #{{student.id}} {% endblock %}
+{% block content %}
+<div class="student">
+ <table class="styled-table">
+ <h2> student #{{student.id}}</h2>
+ <tbody>
+    <tr>
+        <td>Title</td>
+        <td>{{student.roll_no}}</td>
+       </tr>
+       <tr>
+  <tr>
+   <td>Title</td>
+   <td>{{student.name}}</td>
+  </tr>
+  <tr>
+   <td>Status</td>
+   <td>{{student.subject}}</td>
+  </tr>
+  <tr>
+    <td>Status</td>
+    <td>{{student.marks}}</td>
+   </tr>
+  <tr>
+   <td>Created At</td>
+   <td>{{student.created_at}}</td>
+  </tr>
+  <tr>
+   <td>Updated At</td>
+   <td>{{student.updated_at}}</td>
+  </tr>
+ </tbody>
+ </table>
+
+
+</div>
+<p class="text-center">Go to <a href="/index">Home</a></p>
+
+{% endblock %}
